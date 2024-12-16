@@ -85,7 +85,7 @@ def update():
 
     # check if left or right mouse button is held down to activate the hand
     if held_keys['left mouse'] or held_keys['right mouse']:
-        hand.active()
+        hand.activate()
     else:
         hand.passive()
 
@@ -106,7 +106,7 @@ def update():
     if held_keys['up arrow']: 
         player.position += forward_direction
     if held_keys['down arrow']:
-        player.positon -= forward_direction
+        player.position -= forward_direction
 
     # jumping control
     if held_keys['space']:
